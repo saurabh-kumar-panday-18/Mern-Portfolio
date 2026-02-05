@@ -59,7 +59,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="min-h-screen bg-slate-950 text-white px-6 py-20">
+    <section className="py-16 md:py-20 bg-slate-950 text-white px-6" id="projects">
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-indigo-400">

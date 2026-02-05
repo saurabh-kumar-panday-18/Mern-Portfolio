@@ -4,14 +4,12 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
 import Resume from "./pages/Resume";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -20,13 +18,8 @@ function App() {
   );
 
   return (
-
-   
     <BrowserRouter>
-  
-
-      <Navbar isLogin={isLogin} setIsLogin={setIsLogin} />
-
+      <Navbar isLogin={isLogin} setIsLogin={setIsLogin} />  
       <Routes>
         {/* PUBLIC */}
         <Route path="/login" element={<Login setIsLogin={setIsLogin} />} />
@@ -38,29 +31,15 @@ function App() {
           element={isLogin ? <Home /> : <Navigate to="/login" />}
         />
         <Route
-          path="/about"
-          element={isLogin ? <About /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/skills"
-          element={isLogin ? <Skills /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/projects"
-          element={isLogin ? <Projects /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/contact"
-          element={isLogin ? <Contact /> : <Navigate to="/login" />}
-        />
-
-        <Route
   path="/resume"
   element={isLogin ? <Resume /> : <Navigate to="/login" />}
 />
+     </Routes>
 
-      </Routes>
+      <Footer />
     </BrowserRouter>
+
+   
   );
 }
 

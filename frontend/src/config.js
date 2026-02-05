@@ -1,1 +1,1 @@
-export const BASE_URL = "https://mern-portfolio-backend-o1t8.onrender.com";
+export const BASE_URL = "https://backend-ike0.onrender.com";
