@@ -4,7 +4,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     message: "",
   });
 
@@ -14,9 +13,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
-    alert("Message sent! (Demo)");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+   
+  console.log("Form submitted:", formData);
+    alert("Message sent!");
+      
+    setFormData({ name: "", email: "", message: "" });
+    
   };
 
   return (
@@ -38,8 +40,10 @@ const Contact = () => {
 
         {/* Right side - Form */}
         <div className="space-y-10 md:space-y-12">
+          
           <form onSubmit={handleSubmit} className="space-y-8 md:space-y-10">
             {/* Name */}
+
             <div className="group">
               <label className="block text-sm font-medium text-gray-500 mb-2 group-focus-within:text-indigo-400 transition-colors">
                 NAME
@@ -88,10 +92,9 @@ const Contact = () => {
                 placeholder="Enter your message"
               />
             </div>
-
             {/* Submit Button */}
             <div className="flex justify-end pt-6">
-              <button
+              <button 
                 type="submit"
                 className="group relative px-10 py-4 bg-transparent border-2 border-indigo-600 text-indigo-400 font-medium rounded-full overflow-hidden hover:bg-indigo-600 hover:text-white transition-all duration-300 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] active:scale-95"
               >
@@ -101,8 +104,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
-    
     </section>
   );
 };

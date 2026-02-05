@@ -9,14 +9,14 @@ const projects = [
   {
     title: "ZerodhaClone",
     desc: "Secure login & signup system with JWT authentication and MongoDB.",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
+    tech: [ "Express", "React", "Node.js"],
     github: "https://github.com/saurabh-kumar-panday-18",
     live: "https://zerodha-clone-project-zbue.vercel.app/",
   },
   {
     title: "ZerodhaClone Watchlist",
     desc: "Stay updated with real-time market moves. Create multiple personalized watchlists to track your favorite stocks, indices, and ETFs seamlessly.",
-    tech: ["React", "Node.js", "MongoDB"],
+    tech: ["React", "Node.js"],
     github: "https://github.com/saurabh-kumar-panday-18",
     live: "https://zerodha-clone-project-akam.vercel.app/",
   },
@@ -48,13 +48,10 @@ const projects = [
   {
     title: "Ecommerce Shoping Website ",
     desc: "A great restaurant description captures the essence of a dining experience in a few sentences, highlighting its unique cuisine, inviting atmosphere, and signature dishes",
-    tech: ["REACT", "MONOGODB", "NODEJS", "EXPRESS","BOOTSTRAP","GIT","JAVASCRIPT", "API","CSS"],
+    tech: ["REACT", "NODEJS", "EXPRESS","BOOTSTRAP","GIT","JAVASCRIPT", "CSS"],
     github: "https://github.com/saurabh-kumar-panday-18",
     live: "https://react-project-nmi4.vercel.app/",
   },
-
-
-
 ];
 
 const Projects = () => {
