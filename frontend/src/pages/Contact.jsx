@@ -17,7 +17,6 @@ const Contact = () => {
   console.log("Form submitted:", formData);
     alert("Message sent!");
       
-    setFormData({ name: "", email: "", message: "" });
     
   };
 
@@ -74,8 +73,6 @@ const Contact = () => {
                 placeholder="Enter your email"
               />
             </div>
-
-          
 
             {/* Message */}
             <div className="group">

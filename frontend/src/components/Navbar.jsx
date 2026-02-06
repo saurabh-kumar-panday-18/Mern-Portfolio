@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from '../assets/logo.jpg';
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -108,6 +109,9 @@ const Navbar = () => {
           </button>
         </div>
       )}
+
+
+    
     </nav>
   );
 };

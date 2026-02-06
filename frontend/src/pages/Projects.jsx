@@ -1,3 +1,5 @@
+
+
 const projects = [
   {
     title: "Portfolio Website",
@@ -76,11 +78,13 @@ const Projects = () => {
                        hover:border-indigo-500/50 hover:shadow-xl
                        hover:shadow-indigo-500/10 transition-all duration-300"
           >
+
             {/* Title */}
             <h2 className="text-xl font-semibold mb-2">
               {project.title}
             </h2>
 
+  
             {/* Description */}
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               {project.desc}
@@ -126,6 +130,8 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+
     </section>
   );
 };
