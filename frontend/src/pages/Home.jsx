@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <section
         id="home"
-        className="min-h-screen flex items-center bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-white" >
+        className="min-h-screen flex items-center bg-slate-950 text-white px-6 py-12 md:py-20" >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           {/* LEFT CONTENT */}
           <div className="text-center md:text-left space-y-6">
